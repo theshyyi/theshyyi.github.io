@@ -5,25 +5,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Awards | Xinlong Le</title>
   <link rel="stylesheet" href="assets/style.css">
+  <script src="assets/site.js" defer></script>
 </head>
 <body>
   <header class="site-header">
     <nav class="nav">
       <a class="brand" href="index.html">Xinlong Le</a>
       <div class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="research.html">Research</a>
-        <a href="publications.html">Publications</a>
-        <a href="awards.html">Awards</a>
-        <a href="cv.html">CV</a>
+        <a href="index.html" data-en="Home" data-cn="首页">Home</a>
+        <a href="research.html" data-en="Research" data-cn="研究">Research</a>
+        <a href="publications.html" data-en="Publications" data-cn="论文">Publications</a>
+        <a href="awards.html" data-en="Awards" data-cn="荣誉">Awards</a>
+        <a href="cv.html" data-en="CV" data-cn="简历">CV</a>
       </div>
+      <button class="lang-toggle" type="button" data-lang-toggle>中文</button>
     </nav>
   </header>
 
   <main class="container">
-    <h1>Awards</h1>
+    <h1 data-en="Awards" data-cn="荣誉奖励">Awards</h1>
 
-    <section>
+    <section class="lang-panel" data-lang-panel="en">
       <h2>Scholarships</h2>
       <ul class="compact-list">
         <li>Science and Technology Innovation Scholarship, 2025</li>
@@ -31,9 +33,6 @@
         <li>First-Class Academic Scholarship, 2018, 2020 and 2021</li>
         <li>Special Academic Scholarship, 2019</li>
       </ul>
-    </section>
-
-    <section>
       <h2>Honors</h2>
       <ul class="compact-list">
         <li>First Prize, Challenge Cup Reveal-the-List Competition, 2025</li>
@@ -41,6 +40,24 @@
         <li>Outstanding Graduate, 2020</li>
         <li>Merit Student, 2020</li>
         <li>Outstanding Communist Youth League Member, 2018</li>
+      </ul>
+    </section>
+
+    <section class="lang-panel" data-lang-panel="cn">
+      <h2>奖助学金</h2>
+      <ul class="compact-list">
+        <li>科技创新奖学金，2025</li>
+        <li>一等博士奖学金，2023、2024</li>
+        <li>一等学业奖学金，2018、2020、2021</li>
+        <li>特等学业奖学金，2019</li>
+      </ul>
+      <h2>荣誉称号</h2>
+      <ul class="compact-list">
+        <li>“挑战杯”-“揭榜挂帅”擂台赛一等奖，2025</li>
+        <li>“华为杯”研究生数学建模三等奖，2023</li>
+        <li>优秀毕业生，2020</li>
+        <li>三好学生，2020</li>
+        <li>优秀共青团员，2018</li>
       </ul>
     </section>
   </main>

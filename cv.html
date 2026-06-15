@@ -5,34 +5,36 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CV | Xinlong Le</title>
   <link rel="stylesheet" href="assets/style.css">
+  <script src="assets/site.js" defer></script>
 </head>
 <body>
   <header class="site-header">
     <nav class="nav">
       <a class="brand" href="index.html">Xinlong Le</a>
       <div class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="research.html">Research</a>
-        <a href="publications.html">Publications</a>
-        <a href="awards.html">Awards</a>
-        <a href="cv.html">CV</a>
+        <a href="index.html" data-en="Home" data-cn="首页">Home</a>
+        <a href="research.html" data-en="Research" data-cn="研究">Research</a>
+        <a href="publications.html" data-en="Publications" data-cn="论文">Publications</a>
+        <a href="awards.html" data-en="Awards" data-cn="荣誉">Awards</a>
+        <a href="cv.html" data-en="CV" data-cn="简历">CV</a>
       </div>
+      <button class="lang-toggle" type="button" data-lang-toggle>中文</button>
     </nav>
   </header>
 
   <main class="container">
-    <h1>Curriculum Vitae</h1>
+    <div class="page-heading">
+      <h1 data-en="Curriculum Vitae" data-cn="个人简历">Curriculum Vitae</h1>
+      <a class="button" href="assets/CV_Xinlong_Le.pdf" download data-en="Download CV" data-cn="下载简历">Download CV</a>
+    </div>
 
-    <section>
+    <section class="lang-panel" data-lang-panel="en">
       <h2>Education</h2>
       <ul class="timeline">
         <li><span>2023-2027</span> Ph.D. in Hydraulic Engineering, Huazhong University of Science and Technology</li>
         <li><span>2020-2023</span> M.S. in Tunnel Engineering, Southwest Jiaotong University</li>
         <li><span>2016-2020</span> B.E. in Road and Bridge Engineering, Hainan University</li>
       </ul>
-    </section>
-
-    <section>
       <h2>Research Projects</h2>
       <ul class="compact-list">
         <li>Fundamental Research Funds for the Central Universities, 2023-2026, Principal Investigator</li>
@@ -41,9 +43,6 @@
         <li>National Key R&D Program on Yellow River basin water-system decision technologies, 2023-2027, Participant</li>
         <li>Hubei water conservancy key research project on digital-twin reservoir operation, 2024-2025, Responsible member</li>
       </ul>
-    </section>
-
-    <section>
       <h2>Skills</h2>
       <ul class="compact-list">
         <li>Python and Java for hydrometeorological data processing, model evaluation and visualization</li>
@@ -51,6 +50,31 @@
         <li>CMIP6 scenario data, statistical downscaling, bias correction and climate-extreme indices</li>
         <li>Hydrological modeling, multi-source data fusion, multi-criteria decision analysis and machine learning</li>
         <li>Scientific writing, reviewer response, oral presentation and interdisciplinary collaboration</li>
+      </ul>
+    </section>
+
+    <section class="lang-panel" data-lang-panel="cn">
+      <h2>教育背景</h2>
+      <ul class="timeline">
+        <li><span>2023-2027</span> 华中科技大学，水利工程，博士</li>
+        <li><span>2020-2023</span> 西南交通大学，隧道工程，硕士</li>
+        <li><span>2016-2020</span> 海南大学，道路与桥梁工程，本科</li>
+      </ul>
+      <h2>科研项目</h2>
+      <ul class="compact-list">
+        <li>中央高校基本科研业务费资助项目，2023-2026，主持</li>
+        <li>金沙江下游至三峡梯级水库调度相关科研项目，2023-2026，负责</li>
+        <li>国家重点研发计划“流域性大洪水场景推演与智能指挥决策技术”，2022-2025，参与</li>
+        <li>国家重点研发计划“黄河流域三水融合业务推演与智能决策关键技术实施方案”，2023-2027，参与</li>
+        <li>湖北省水利重点科研项目“数字孪生黄柏河流域梯级水库多目标优化调度关键技术研究”，2024-2025，负责</li>
+      </ul>
+      <h2>专业技能</h2>
+      <ul class="compact-list">
+        <li>熟练使用 Python 和 Java 开展水文气象数据处理、模型评估与科研绘图</li>
+        <li>熟悉 NetCDF、GeoTIFF、站点观测、遥感与再分析产品处理流程</li>
+        <li>掌握 CMIP6 情景数据、统计降尺度、偏差订正与极端气候指数计算</li>
+        <li>具备水文模拟、多源数据融合、多准则决策分析和机器学习研究经验</li>
+        <li>具备英文科技论文写作、审稿意见回复、国际会议汇报和跨学科合作经验</li>
       </ul>
     </section>
   </main>

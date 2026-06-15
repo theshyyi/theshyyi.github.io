@@ -5,36 +5,41 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Xinlong Le</title>
   <link rel="stylesheet" href="assets/style.css">
+  <script src="assets/site.js" defer></script>
 </head>
 <body>
   <header class="site-header">
     <nav class="nav">
       <a class="brand" href="index.html">Xinlong Le</a>
       <div class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="research.html">Research</a>
-        <a href="publications.html">Publications</a>
-        <a href="awards.html">Awards</a>
-        <a href="cv.html">CV</a>
+        <a href="index.html" data-en="Home" data-cn="首页">Home</a>
+        <a href="research.html" data-en="Research" data-cn="研究">Research</a>
+        <a href="publications.html" data-en="Publications" data-cn="论文">Publications</a>
+        <a href="awards.html" data-en="Awards" data-cn="荣誉">Awards</a>
+        <a href="cv.html" data-en="CV" data-cn="简历">CV</a>
       </div>
+      <button class="lang-toggle" type="button" data-lang-toggle>中文</button>
     </nav>
   </header>
 
   <main class="container">
     <section class="profile">
-      <div class="portrait placeholder">XL</div>
+      <img class="portrait" src="assets/profile.jpg" alt="Portrait of Xinlong Le">
       <div>
-        <h1>Xinlong Le</h1>
-        <p class="subtitle">Ph.D. Candidate in Hydraulic Engineering</p>
-        <p>School of Civil and Hydraulic Engineering, Huazhong University of Science and Technology</p>
+        <h1>Xinlong Le <span class="cn-name">乐新龙</span></h1>
+        <p class="subtitle" data-en="Ph.D. Candidate in Hydraulic Engineering" data-cn="水利工程博士研究生">Ph.D. Candidate in Hydraulic Engineering</p>
+        <p data-en="School of Civil and Hydraulic Engineering, Huazhong University of Science and Technology" data-cn="华中科技大学 土木与水利工程学院">School of Civil and Hydraulic Engineering, Huazhong University of Science and Technology</p>
         <p>
           Email: <a href="mailto:xinlong_le@hust.edu.cn">xinlong_le@hust.edu.cn</a><br>
           ORCID: <a href="https://orcid.org/0000-0002-8681-1036">0000-0002-8681-1036</a>
         </p>
+        <p class="actions">
+          <a class="button" href="assets/CV_Xinlong_Le.pdf" download data-en="Download CV" data-cn="下载简历">Download CV</a>
+        </p>
       </div>
     </section>
 
-    <section>
+    <section class="lang-panel" data-lang-panel="en">
       <h2>About Me</h2>
       <p>
         I am a Ph.D. candidate working at the intersection of hydrology, climate extremes,
@@ -49,7 +54,38 @@
       </p>
     </section>
 
-    <section>
+    <section class="lang-panel" data-lang-panel="cn">
+      <h2>个人简介</h2>
+      <p>
+        我目前为华中科技大学水利工程专业博士研究生，研究方向交叉于水文水资源、气候极端事件、
+        遥感/再分析降水产品评估与多源地球观测数据分析。博士阶段主要围绕全球变化背景下的
+        流域水文响应、复合极端事件、CMIP6 情景数据、统计降尺度和不确定性诊断开展研究。
+      </p>
+      <p>
+        我具备气候与水文数据集构建、多源降水产品评估、极端气候指数诊断以及大规模格点数据
+        处理经验，熟练使用 Python 和 Java 开展科学计算、模型评价与可视化。
+      </p>
+    </section>
+
+    <section class="lang-panel" data-lang-panel="en">
+      <h2>Education</h2>
+      <ul class="timeline">
+        <li><span>2023-2027</span> Ph.D. in Hydraulic Engineering, Huazhong University of Science and Technology</li>
+        <li><span>2020-2023</span> M.S. in Tunnel Engineering, Southwest Jiaotong University</li>
+        <li><span>2016-2020</span> B.E. in Road and Bridge Engineering, Hainan University</li>
+      </ul>
+    </section>
+
+    <section class="lang-panel" data-lang-panel="cn">
+      <h2>教育背景</h2>
+      <ul class="timeline">
+        <li><span>2023-2027</span> 华中科技大学，水利工程，博士</li>
+        <li><span>2020-2023</span> 西南交通大学，隧道工程，硕士</li>
+        <li><span>2016-2020</span> 海南大学，道路与桥梁工程，本科</li>
+      </ul>
+    </section>
+
+    <section class="lang-panel" data-lang-panel="en">
       <h2>Research Interests</h2>
       <ul class="compact-list">
         <li>Watershed hydrological responses under global change</li>
@@ -60,7 +96,18 @@
       </ul>
     </section>
 
-    <section>
+    <section class="lang-panel" data-lang-panel="cn">
+      <h2>研究兴趣</h2>
+      <ul class="compact-list">
+        <li>全球变化背景下的流域水文响应</li>
+        <li>复合气候极端事件与水文气象风险</li>
+        <li>卫星、再分析与气候模式数据评估</li>
+        <li>统计降尺度、偏差订正与不确定性分析</li>
+        <li>气候数据集、极端指数与地球系统数据产品</li>
+      </ul>
+    </section>
+
+    <section class="lang-panel" data-lang-panel="en">
       <h2>News</h2>
       <ul class="news-list">
         <li><span>2026</span> Paper on precipitation product evaluation over China published in <em>International Journal of Applied Earth Observation and Geoinformation</em>.</li>
@@ -68,10 +115,19 @@
         <li><span>2025</span> Oral presentation at the 41st IAHR World Congress in Singapore.</li>
       </ul>
     </section>
+
+    <section class="lang-panel" data-lang-panel="cn">
+      <h2>近期动态</h2>
+      <ul class="news-list">
+        <li><span>2026</span> 中国区域 28 套降水产品多准则评估论文发表于 <em>International Journal of Applied Earth Observation and Geoinformation</em>。</li>
+        <li><span>2026</span> ECHIDNA 极端气候指数数据集论文发表于 <em>Scientific Data</em>。</li>
+        <li><span>2025</span> 赴新加坡参加第 41 届 IAHR World Congress 并作口头汇报。</li>
+      </ul>
+    </section>
   </main>
 
   <footer>
-    <p>Last updated: June 2026</p>
+    <p data-en="Last updated: June 2026" data-cn="最后更新：2026 年 6 月">Last updated: June 2026</p>
   </footer>
 </body>
 </html>

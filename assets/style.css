@@ -40,7 +40,7 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 24px;
+  gap: 18px;
 }
 
 .brand {
@@ -57,6 +57,30 @@ a:hover {
 
 .nav-links a {
   color: #333;
+}
+
+.lang-toggle,
+.button {
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  background: #fff;
+  color: #222;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 34px;
+  padding: 6px 12px;
+  font: inherit;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+
+.lang-toggle:hover,
+.button:hover {
+  border-color: var(--link);
+  color: var(--link);
+  text-decoration: none;
 }
 
 .container {
@@ -78,6 +102,8 @@ a:hover {
   aspect-ratio: 1;
   border: 1px solid var(--line);
   background: var(--soft);
+  object-fit: cover;
+  display: block;
 }
 
 .placeholder {
@@ -106,6 +132,35 @@ h2 {
   color: var(--muted);
   font-size: 18px;
   margin-top: 0;
+}
+
+.cn-name {
+  color: var(--muted);
+  font-size: 24px;
+  font-weight: 400;
+  margin-left: 8px;
+}
+
+.actions {
+  margin-top: 16px;
+}
+
+.page-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  border-bottom: 1px solid var(--line);
+  margin-bottom: 18px;
+  padding-bottom: 10px;
+}
+
+.page-heading h1 {
+  margin-bottom: 0;
+}
+
+.page-heading + .lang-panel h2:first-child {
+  margin-top: 12px;
 }
 
 .compact-list,
@@ -165,5 +220,16 @@ footer {
 
   h1 {
     font-size: 30px;
+  }
+
+  .cn-name {
+    display: block;
+    margin-left: 0;
+    margin-top: 3px;
+  }
+
+  .page-heading {
+    align-items: flex-start;
+    flex-direction: column;
   }
 }
