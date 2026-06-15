@@ -7,6 +7,9 @@
     document.querySelectorAll("[data-en][data-cn]").forEach((node) => {
       node.textContent = node.dataset[lang];
     });
+    document.querySelectorAll("[data-href-en][data-href-cn]").forEach((node) => {
+      node.setAttribute("href", node.dataset[`href${lang === "cn" ? "Cn" : "En"}`]);
+    });
     document.querySelectorAll("[data-lang-panel]").forEach((node) => {
       node.hidden = node.dataset.langPanel !== lang;
     });
