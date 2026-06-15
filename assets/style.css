@@ -145,6 +145,12 @@ h2 {
   margin-left: 8px;
 }
 
+.alias {
+  color: var(--muted);
+  font-size: 24px;
+  font-weight: 400;
+}
+
 .actions {
   margin-top: 16px;
   display: flex;
@@ -246,6 +252,7 @@ footer {
     font-size: 30px;
   }
 
+  .alias,
   .cn-name {
     display: block;
     margin-left: 0;

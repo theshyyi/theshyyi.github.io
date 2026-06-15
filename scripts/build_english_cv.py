@@ -110,7 +110,7 @@ def build():
     title = doc.add_paragraph()
     title.alignment = WD_ALIGN_PARAGRAPH.CENTER
     set_paragraph_spacing(title, after=2, line=1.0)
-    r = title.add_run("Xinlong Le")
+    r = title.add_run("Xinlong Le (ShiloH)")
     set_run_font(r, size=22, bold=True, color=RGBColor(0, 0, 0))
 
     contact = doc.add_paragraph()
@@ -224,7 +224,7 @@ def build():
     footer = section.footer.paragraphs[0]
     footer.alignment = WD_ALIGN_PARAGRAPH.CENTER
     set_paragraph_spacing(footer, after=0, line=1.0)
-    fr = footer.add_run("Xinlong Le | Curriculum Vitae | Updated June 2026")
+    fr = footer.add_run("Xinlong Le (ShiloH) | Curriculum Vitae | Updated June 2026")
     set_run_font(fr, size=8.5, color=MUTED)
 
     doc.save(OUT)

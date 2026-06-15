@@ -28,7 +28,7 @@ def footer(canvas, doc):
     canvas.saveState()
     canvas.setFont("Helvetica", 8)
     canvas.setFillColor(colors.HexColor("#666666"))
-    canvas.drawCentredString(letter[0] / 2, 0.42 * inch, "Xinlong Le | Curriculum Vitae | Updated June 2026")
+    canvas.drawCentredString(letter[0] / 2, 0.42 * inch, "Xinlong Le (ShiloH) | Curriculum Vitae | Updated June 2026")
     canvas.drawRightString(letter[0] - 0.75 * inch, 0.42 * inch, str(doc.page))
     canvas.restoreState()
 
@@ -122,7 +122,7 @@ def build():
     }
 
     story = [
-        Paragraph("Xinlong Le", styles["Title"]),
+        Paragraph("Xinlong Le (ShiloH)", styles["Title"]),
         Paragraph(
             "Ph.D. Candidate in Hydraulic Engineering | Huazhong University of Science and Technology<br/>"
             "Email: xinlong_le@hust.edu.cn | Phone: +86 183 8229 0228 | ORCID: 0000-0002-8681-1036",
