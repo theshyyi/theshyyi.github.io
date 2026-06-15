@@ -207,6 +207,19 @@ h2 {
   margin-top: 0;
 }
 
+.research-item {
+  margin-bottom: 34px;
+}
+
+.research-image {
+  width: 100%;
+  aspect-ratio: 16 / 7;
+  display: block;
+  object-fit: cover;
+  border: 1px solid var(--line);
+  margin: 0 0 14px;
+}
+
 footer {
   max-width: 980px;
   margin: 0 auto;
