@@ -1,0 +1,169 @@
+:root {
+  --text: #222;
+  --muted: #5f6872;
+  --link: #1f6fb2;
+  --line: #d9dee5;
+  --soft: #f6f8fa;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: var(--text);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.65;
+  background: #fff;
+}
+
+a {
+  color: var(--link);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.site-header {
+  border-bottom: 1px solid var(--line);
+  background: #fff;
+}
+
+.nav {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 18px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.brand {
+  color: #111;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.nav-links a {
+  color: #333;
+}
+
+.container {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 36px 24px 56px;
+}
+
+.profile {
+  display: grid;
+  grid-template-columns: 170px 1fr;
+  gap: 32px;
+  align-items: start;
+  margin-bottom: 28px;
+}
+
+.portrait {
+  width: 170px;
+  aspect-ratio: 1;
+  border: 1px solid var(--line);
+  background: var(--soft);
+}
+
+.placeholder {
+  display: grid;
+  place-items: center;
+  color: #87909b;
+  font-size: 44px;
+  font-weight: 700;
+}
+
+h1 {
+  margin: 0 0 10px;
+  font-size: 34px;
+  line-height: 1.2;
+}
+
+h2 {
+  margin: 34px 0 10px;
+  font-size: 22px;
+  line-height: 1.3;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 6px;
+}
+
+.subtitle {
+  color: var(--muted);
+  font-size: 18px;
+  margin-top: 0;
+}
+
+.compact-list,
+.news-list,
+.timeline,
+.publication-list {
+  padding-left: 22px;
+}
+
+.compact-list li,
+.news-list li,
+.timeline li,
+.publication-list li {
+  margin-bottom: 9px;
+}
+
+.news-list span,
+.timeline span {
+  color: var(--muted);
+  font-weight: 700;
+  margin-right: 8px;
+}
+
+.publication-list li {
+  padding-left: 4px;
+}
+
+.note {
+  color: var(--muted);
+}
+
+.research-item p {
+  margin-top: 0;
+}
+
+footer {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 0 24px 32px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+@media (max-width: 720px) {
+  .nav {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .profile {
+    grid-template-columns: 1fr;
+  }
+
+  .portrait {
+    width: 150px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+}
